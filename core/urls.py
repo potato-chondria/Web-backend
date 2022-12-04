@@ -1,6 +1,9 @@
 from django.urls import path
-from .views import index
+from core import views
 
 urlpatterns = [
-    path('', index, name='index'),
+    path('', views.index, name='index'),
+    path('main', views.main),
+    path('main/<int:drain_id>', views.getDrainData),
+    path('drains', views.getAllDrainData, name="drains"),
 ]

@@ -4,14 +4,65 @@
 <head>
 	<title>django-boilerplate</title>
 
-	<link rel="stylesheet" type="text/css" href="{% static 'core/style.css' %}">
-
+	<link rel="stylesheet" type="text/css" href="{% static 'core/style.css' %}"> 
+    
 </head>
 <body>
+   
+    {% comment %} left-side-bar {% endcomment %}
+    <div id="box1"></div>
+    <img id="knu" src="{% static 'img/KNU.png' %}" alt="KNU">
+    <p id="leftBarTitle">경북대학교 배수구 지도</p>
+    <hr id="line1">
+    <p id="location">위치</p>
+    <button id="northgate" onclick="toNorthgate()">북문</button>
+    <button id="maingate" onclick="toMaingate()">정문</button>
+    <button id="cse" onclick="toCSE()">융복</button>
+    <button id="techgate" onclick="toTechgate()">택문</button>
+    <button id="agrigate" onclick="toAgrigate()">농장문</button>
+    <button id="eastgate" onclick="toEastgate()">동문</button>
+    <div id="lMainImg">
+        <img id="img" src="{% static 'img/main.png'%}" alt="Loading...">
+    </div>
+    {% comment %} <hr id="line2"> {% endcomment %}
 
-	{% block content %}
+    {% comment %} map {% endcomment %}
+    <div id="map" style="width:100%;height:100vh;"></div>
+   
 
-	{% endblock %}
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=930ea9f92215042f71616a6876e105a9"></script>
+    <script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(35.89099350000003, 128.61230809650215), // 지도의 중심좌표
+        level: 4 // 지도의 확대 레벨
+    };
 
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+    </script>
+    <script type="text/javascript" src="{%static 'js/map.js' %}"></script>
+   
+    <script>
+        function toNorthgate() {
+            document.getElementById("img").src = "{% static 'img/northgate.jpg'%}";
+        }
+        function toMaingate(){
+            document.getElementById("img").src = "{% static 'img/maingate.jpg'%}";
+        }
+        function toCSE(){
+            document.getElementById("img").src = "{% static 'img/cse.jpg'%}";
+        }
+        function toTechgate(){
+            document.getElementById("img").src = "{% static 'img/techgate.png'%}";
+        }
+        function toAgrigate(){
+            document.getElementById("img").src = "{% static 'img/agrigate.jpg'%}";
+        }
+        function toEastgate(){
+            document.getElementById("img").src = "{% static 'img/eastgate.jpg'%}";
+        }
+    </script>
+	{% comment %} {% block content %}
+	{% endblock %}  {% endcomment %}
 </body>
 </html>
