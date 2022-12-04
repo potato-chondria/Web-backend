@@ -11,6 +11,8 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="{% static 'core/style_side.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'core/style.css' %}"> 
+
 	<style>
 		body {
 			margin: 0px;
@@ -79,7 +81,48 @@
 		<script type="text/javascript" src="{% static 'js/map_sidebar.js' %}"></script>
 
 	</div>
+	{% comment %} left-side-bar {% endcomment %}
+	<div id="leftSideBar">
+	   <div id="box1"></div>
+	   <img id="knu" src="{% static 'img/KNU.png' %}" alt="KNU">
+	   <p id="leftBarTitle">경북대학교 배수구 지도</p>
+	   <hr id="line1">
+	   <p id="location">위치</p>
+	   <button id="northgate" onclick="toNorthgate()">북문</button>
+	   <button id="maingate" onclick="toMaingate()">정문</button>
+	   <button id="cse" onclick="toCSE()">융복</button>
+	   <button id="techgate" onclick="toTechgate()">택문</button>
+	   <button id="agrigate" onclick="toAgrigate()">농장문</button>
+	   <button id="eastgate" onclick="toEastgate()">동문</button>
+	   <div id="lMainImg">
+		   <img id="img" src="{% static 'img/main.png'%}" alt="Loading...">
+	   </div>
+	   </div>
 
+
+
+
+
+	   <script>
+		   function toNorthgate() {
+			   document.getElementById("img").src = "{% static 'img/northgate.jpg'%}";
+		   }
+		   function toMaingate(){
+			   document.getElementById("img").src = "{% static 'img/maingate.jpg'%}";
+		   }
+		   function toCSE(){
+			   document.getElementById("img").src = "{% static 'img/cse.jpg'%}";
+		   }
+		   function toTechgate(){
+			   document.getElementById("img").src = "{% static 'img/techgate.png'%}";
+		   }
+		   function toAgrigate(){
+			   document.getElementById("img").src = "{% static 'img/agrigate.jpg'%}";
+		   }
+		   function toEastgate(){
+			   document.getElementById("img").src = "{% static 'img/eastgate.jpg'%}";
+		   }
+	   </script>
 	<div id="sidebar">
 		<h3 style="color: green;">배수구 정보</h3>
 		<!--여기에 배수구 정보 넣기-->
