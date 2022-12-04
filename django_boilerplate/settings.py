@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'potato.urls'
+ROOT_URLCONF = 'django_boilerplate.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'potato.wsgi.application'
+WSGI_APPLICATION = 'django_boilerplate.wsgi.application'
 
 
 # Database
