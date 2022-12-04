@@ -21,8 +21,8 @@
 			position: fixed;
 			top: 0;
 			right: 0;
-			background-color: rgb(70, 118, 189);
-			color: white;
+			background-color: rgb(255, 255, 255);
+			color: green;
 			width: 300px;
 			height: 100vh;
 			text-align: center;
@@ -30,6 +30,12 @@
 
 		.emphasized {
 			box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 9999px;
+		}
+
+		hr {
+			background: green;
+			height: 2px;
+			border: 0;
 		}
 	</style>
 
@@ -66,20 +72,20 @@
 <body>
 
 	<div>
-		<!-- <i class="fas fa-bars" id="OpenBtn"></i>
-		<span>heejung</span> -->
+
 		<br><br><br>
 		<div id="map" style="width:100%;height:100vh;"></div>
-		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=27ca58aea6bfdc0ca906de0302d395cc"></script>
+		<script type="text/javascript"
+			src="//dapi.kakao.com/v2/maps/sdk.js?appkey=27ca58aea6bfdc0ca906de0302d395cc"></script>
 		<script type="text/javascript" src="{% static 'js/map_sidebar.js' %}"></script>
-	
-		
-		</div>
 
-	<div id="sidebar" >
-		<h1>배수구 정보</h1>
-		
+	</div>
 
+	<div id="sidebar">
+		<h3>배수구 정보</h3>
+		<!--여기에 배수구 정보 넣기-->
+		<hr>
+		
 	</div>
 
 
