@@ -10,6 +10,11 @@ body {
 	top: 0px;
 }
 
+#leftSideBar{
+	z-index: 1000;
+	position: absolute;
+	display: flex;
+}
 #box1 {
 	box-sizing: border-box;
 	position: absolute;
