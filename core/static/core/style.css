@@ -14,14 +14,16 @@ body {
 	z-index: 1000;
 	position: absolute;
 	display: flex;
+	margin-top: -70px;
+
 }
 #box1 {
 	box-sizing: border-box;
 	position: absolute;
 	width: 380px;
-	height: 807px;
+	height: 700px;
 	left: 37px;
-	top: 111px;
+	top: 80px;
 	background: #FFFFFF;
 	border: 1px solid #FFFEFE;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -33,7 +35,7 @@ body {
 	width: 378.01px;
 	height: 0px;
 	left: 38px;
-	top: 197px;
+	top: 170px;
 
 	background: #00A82F;
 	border: 1px solid #00A82F;
@@ -57,7 +59,7 @@ body {
 	width: 416px;
 	height: 91px;
 	left: 135px;
-	top: 127px;
+	top: 100px;
 
 	font-family: 'NanumSquareRound';
 	font-style: normal;
@@ -73,7 +75,7 @@ body {
 	width: 58px;
 	height: 55px;
 	left: 50px;
-	top: 135px;
+	top: 110px;
 }
 
 #location {
@@ -81,23 +83,23 @@ body {
 	width: 145px;
 	height: 35px;
 	left: 64px;
-	top: 220px;
+	top: 195px;
 
 	font-family: 'NanumSquareRound';
 	font-style: normal;
-	font-weight: 700;
-	font-size: 32px;
+	font-weight: 500;
+	font-size: 28px;
 	line-height: 36px;
 
 	color: #000000;
 }
 
 #lMainImg {
-	position: absolute;
+	position:absolute;
 	width: 379px;
-	height: 292px;
+	height: 230px;
 	left: 38px;
-	top: 624px;
+	top: 550px;
 
 	border-radius: 0px 0px 45px 45px;
 }
@@ -116,15 +118,15 @@ body {
 	width: 146px;
 	height: 55px;
 	left: 69px;
-	top: 318px;
+	top: 280px;
 
-	background: #F44336;
-	border: 1px solid #F30404;
+	background: #f1f1f1;
+	border: 1px solid #f1f1f1;
 	border-radius: 15px;
 	font-family: 'NanumSquareRound';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 32px;
+	font-size: 24px;
 	line-height: 36px;
 	letter-spacing: 0.25em;
 
@@ -141,15 +143,15 @@ body {
 	width: 146px;
 	height: 55px;
 	left: 239px;
-	top: 318px;
+	top: 280px;
 
-	background: #246ABF;
-	border: 1px solid #246ABF;
+	background: #f1f1f1;
+	border: 1px solid #f1f1f1;
 	border-radius: 15px;
 	font-family: 'NanumSquareRound';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 32px;
+	font-size: 24px;
 	line-height: 36px;
 	letter-spacing: 0.25em;
 
@@ -166,15 +168,15 @@ body {
 	width: 146px;
 	height: 55px;
 	left: 69px;
-	top: 408px;
+	top: 370px;
 
-	background: #F44336;
-	border: 1px solid #F30404;
+	background: #f1f1f1;
+	border: 1px solid #f1f1f1;
 	border-radius: 15px;
 	font-family: 'NanumSquareRound';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 32px;
+	font-size: 24px;
 	line-height: 36px;
 	letter-spacing: 0.25em;
 
@@ -191,15 +193,15 @@ body {
 	width: 146px;
 	height: 55px;
 	left: 239px;
-	top: 408px;
+	top: 370px;
 
-	background: #246ABF;
-	border: 1px solid #246ABF;
+	background: #f1f1f1;
+	border: 1px solid #f1f1f1;
 	border-radius: 15px;
 	font-family: 'NanumSquareRound';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 32px;
+	font-size: 24px;
 	line-height: 36px;
 	letter-spacing: 0.25em;
 
@@ -216,15 +218,15 @@ body {
 	width: 146px;
 	height: 55px;
 	left: 69px;
-	top: 498px;
+	top: 460px;
 
-	background: #FFC400;
-	border: 1px solid #FFF50A;
+	background: #f1f1f1;
+	border: 1px solid #f1f1f1;
 	border-radius: 15px;
 	font-family: 'NanumSquareRound';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 32px;
+	font-size: 24px;
 	line-height: 36px;
 	letter-spacing: 0.25em;
 
@@ -241,15 +243,15 @@ body {
 	width: 146px;
 	height: 55px;
 	left: 242px;
-	top: 498px;
+	top: 460px;
 
-	background: #FFC400;
-	border: 1px solid #FFF50A;
+	background: #f1f1f1;
+	border: 1px solid #f1f1f1;
 	border-radius: 15px;
 	font-family: 'NanumSquareRound';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 32px;
+	font-size: 24px;
 	line-height: 36px;
 	letter-spacing: 0.25em;
 
