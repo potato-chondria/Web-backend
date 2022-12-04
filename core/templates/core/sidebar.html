@@ -1,0 +1,88 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{% static 'core/style_side.css' %}">
+	<style>
+		body {
+			margin: 0px;
+		}
+
+		#sidebar {
+			display: none;
+			position: fixed;
+			top: 0;
+			right: 0;
+			background-color: rgb(70, 118, 189);
+			color: white;
+			width: 300px;
+			height: 100vh;
+			text-align: center;
+		}
+
+		.emphasized {
+			box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 9999px;
+		}
+	</style>
+
+
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js"
+		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+	<!-- 폰트어썸 -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+		integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+	<script>
+		$(document).ready(function () {
+			var target = $("#sidebar");
+
+			// 버튼을 클릭하면 사이드바 열림
+			$(document).on("click", "#OpenBtn", function (e) {
+				target.show();
+				// target.addClass('emphasized');
+			});
+
+			// 사이드바 외부를 클릭하면 사이드바 닫힘
+			$(document).mouseup(function (e) {
+				if (target.has(e.target).length == 0) {
+					target.hide();
+					// target.removeClass('emphasized');
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<div>
+		<!-- <i class="fas fa-bars" id="OpenBtn"></i>
+		<span>heejung</span> -->
+		<br><br><br>
+		<div id="map" style="width:100%;height:100vh;"></div>
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=27ca58aea6bfdc0ca906de0302d395cc"></script>
+		<script type="text/javascript" src="{% static 'js/map_sidebar.js' %}"></script>
+	
+		
+		</div>
+
+	<div id="sidebar" >
+		<h1>배수구 정보</h1>
+		
+
+	</div>
+
+
+</body>
+
+</html>

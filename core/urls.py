@@ -6,4 +6,5 @@ urlpatterns = [
     path('main', views.main),
     path('main/<int:drain_id>', views.getDrainData),
     path('drains', views.getAllDrainData, name="drains"),
+    path('sidebar', views.sidebar),
 ]
