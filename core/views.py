@@ -16,11 +16,5 @@ def sidebar(request):
 @api_view(['GET',])
 def getAllDrainData(request):
 	drains = Drain.objects.all()
-	serializer = drainDataSerializer(drains, many=False)
+	serializer = drainDataSerializer(drains, many=True)
 	return Response(serializer.data)	
-
-@api_view(['GET',])
-def getDrainData(request, drain_id):
-	drains = Drain.objects.get(drain_id=drain_id)
-	serializer = drainDataSerializer(drains, many=False)
-	return Response(serializer.data)
