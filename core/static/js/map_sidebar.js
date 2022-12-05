@@ -64,6 +64,7 @@ const init = async () => {
 }
 
 init();
+setInterval(init, 3000);
 
 $(document).ready(function () {
   // 사이드바 외부를 클릭하면 사이드바 닫힘
