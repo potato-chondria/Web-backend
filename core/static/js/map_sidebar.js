@@ -11,7 +11,7 @@ var positions = [];
 
 
 const getData = async () => {
-    const res = await fetch("http://127.0.0.1:8000/drains/")
+    const res = await fetch("http://133.186.151.173:80/drains/")
     return res.text();
 }
 
